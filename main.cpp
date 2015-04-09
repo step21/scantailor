@@ -36,7 +36,7 @@
 #include "CommandLine.h"
 
 
-//#ifdef Q_WS_WIN
+//#ifdef Q_OS_WIN
 //// Import static plugins
 //#Q_IMPORT_PLUGIN(qjpeg)
 //#endif

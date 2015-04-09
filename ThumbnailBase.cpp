@@ -200,7 +200,7 @@ ThumbnailBase::paint(QPainter* painter,
 	temp_painter.setPen(Qt::NoPen);
 	temp_painter.setBrush(Qt::white);
 	temp_painter.setWorldTransform(temp_adjustment);
-#ifndef Q_WS_X11
+#ifndef Q_OS_X11
 	// That's how it's supposed to be.
 	temp_painter.setCompositionMode(QPainter::CompositionMode_Clear);
 #else

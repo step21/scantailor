@@ -32,7 +32,7 @@
 #	include <QGLWidget>
 #endif
 
-#ifdef Q_WS_X11
+#ifdef Q_OS_X11
 #  include <QX11Info>
 #  include <QRegion>
 #  include <X11/extensions/Xrender.h>
@@ -42,7 +42,7 @@ void
 PixmapRenderer::drawPixmap(
 	QPainter& painter, QPixmap const& pixmap)
 {
-#if !defined(Q_WS_X11)
+#if !defined(Q_OS_X11)
 	drawPixmapNoXRender(painter, pixmap);
 #else
 	QPaintDevice* const dev = painter.device();

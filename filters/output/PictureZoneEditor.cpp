@@ -255,7 +255,7 @@ PictureZoneEditor::paintOverPictureMask(QPainter& painter)
 	painter.setPen(Qt::NoPen);
 	painter.setBrush(QColor(mask_color));
 
-#ifndef Q_WS_X11
+#ifndef Q_OS_X11
 	// That's how it's supposed to be.
 	painter.setCompositionMode(QPainter::CompositionMode_Clear);
 #else
@@ -284,7 +284,7 @@ PictureZoneEditor::paintOverPictureMask(QPainter& painter)
 		}
 	}
 
-#ifndef Q_WS_X11
+#ifndef Q_OS_X11
 	// That's how it's supposed to be.
 	painter.setCompositionMode(QPainter::CompositionMode_Clear);
 #else
